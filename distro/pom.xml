@@ -58,6 +58,7 @@
     <!-- Content Packages -->
     <reference-content.version>1.5.0-SNAPSHOT</reference-content.version>
     <reference-demo-content.version>1.7.0-SNAPSHOT</reference-demo-content.version>
+    <icrc-content.version>2.0.0-SNAPSHOT</icrc-content.version>
   </properties>
 
   <dependencies>

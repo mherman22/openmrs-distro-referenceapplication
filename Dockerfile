@@ -2,10 +2,22 @@
 
 ### Dev Stage
 FROM openmrs/openmrs-core:2.8.x-dev-amazoncorretto-21 AS dev
+
+# Set up the local Maven repository
+VOLUME /root/.m2/repository
+
 WORKDIR /openmrs_distro
 
-ARG MVN_ARGS_SETTINGS="-s /usr/share/maven/ref/settings-docker.xml -U -P distro"
+ARG MVN_ARGS_SETTINGS="-s /usr/share/maven/ref/settings-docker.xml -U -P distro,no-demo"
 ARG MVN_ARGS="install"
+
+# Create directory for the ICRC content package Maven artifact in both possible locations
+RUN mkdir -p /root/.m2/repository/org/openmrs/content/icrc/ && \
+    mkdir -p /usr/share/maven/ref/repository/org/openmrs/content/icrc/
+
+# Copy the entire ICRC content package Maven artifact (including POM) from local Maven repo to both locations
+COPY maven-repo/org/openmrs/content/icrc/ /root/.m2/repository/org/openmrs/content/icrc/
+COPY maven-repo/org/openmrs/content/icrc/ /usr/share/maven/ref/repository/org/openmrs/content/icrc/
 
 # Copy build files
 COPY pom.xml ./
@@ -19,6 +31,7 @@ RUN cp /openmrs_distro/distro/target/sdk-distro/web/openmrs_core/openmrs.war /op
 
 RUN cp /openmrs_distro/distro/target/sdk-distro/web/openmrs-distro.properties /openmrs/distribution/
 RUN cp -R /openmrs_distro/distro/target/sdk-distro/web/openmrs_modules /openmrs/distribution/openmrs_modules/
+RUN cp /openmrs_distro/distro/dataimport-1.0.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules/
 RUN cp -R /openmrs_distro/distro/target/sdk-distro/web/openmrs_owas /openmrs/distribution/openmrs_owas/
 RUN cp -R /openmrs_distro/distro/target/sdk-distro/web/openmrs_config /openmrs/distribution/openmrs_config/
 
