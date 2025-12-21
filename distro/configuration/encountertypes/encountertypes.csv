@@ -1,0 +1,20 @@
+Uuid,Void/Retire,Name,Description
+044daI6d-f80e-48fe-aba9-037f241905Pe,,ANC - Encounter,An encounter when a patient gets ANC services
+181820aa-88c9-479b-9077-af92f5364329,,Discharge,"Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon."
+214e27a1-606a-4b1e-a96e-d736c87069d5,,LAB Encounter,Lab Encounter
+244da86d-f80e-48fe-aba9-067f241905ee,,SMC - Encounter,An encounter when a patient gets SMC services
+25a042b2-60bc-4940-a909-debd098b7d82,,Check Out,The patient is explicitly leaving the hospital/clinic. (Usually no formal encounter is captured for this.)
+264daIZd-f80e-48fe-nba9-P37f2W1905Pv,,HTC - Encounter,An encounter when a patient gets HCT services
+4345dacb-909d-429c-99aa-045f2db77e2b,,EID Card - Encounter,Outpatient Child Return Visit
+67a71486-1a54-468f-ac3e-7091a9a79584,,Vitals,For capturing vital signs
+6d88e370-f2ba-476b-bf1b-d8eaf3b1b67e,,ART Card - Health Education Encounter,An Health education encounter created when a patient gets health education
+7b68d557-85ef-4fc8-b767-4fa4f5eb5c23,,Transfer,Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)
+8d5b27bc-c2cc-11de-8d13-0010c6dffd0f,,ART Card - Summary,Outpatient Adult Initial Visit
+8d5b2be0-c2cc-11de-8d13-0010c6dffd0f,,ART Card - Encounter,Outpatient Adult & Child Return Visit
+9fcfcc91-ad60-4d84-9710-11cc25258719,,EID Card - Summary,Outpatient Children Initial Visit
+a9f11592-22e7-45fc-904d-dfe24cb1fc67,,Maternity - Encounter,When a mother comes to a health facility to deliver
+ca3aed11-1aa4-42a1-b85c-8332fc8001fc,,Check In,Indicates the patient has done the required paperwork and check-in to begin a visit to the clinic/hospital.
+d7151f82-c1f3-4152-a605-2f9ea7414a79,,Visit Note,"Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician."
+e22e39fd-7db2-45e7-80f1-60fa0d5a4378,,Admission,"Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
+d211f5a7-b0b7-4021-8224-72c58866600e,,Early Infant Diagnosis (EID) Request,The encounter type where EIR Lab requests are made
+2ce24f40-8f4c-4bfa-8fde-09d475783468,,Community Visit,This is a visit type that server all clients on community service models

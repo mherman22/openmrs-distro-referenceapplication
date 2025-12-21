@@ -16,5 +16,3 @@ services:
   backend:
     build:
       context: .
-    volumes:
-      - /Users/mac/work/madiro.icrc/openmrs-content-icrc/target/icrc-2.0.0-SNAPSHOT.zip:/tmp/icrc-content-package

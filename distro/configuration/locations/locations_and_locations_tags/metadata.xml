@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list id="1">
+  <org.openmrs.Location id="2" uuid="629d78e9-93e5-43b0-ad8a-48313fd99117">
+    <name>Health Center</name>
+    <description>Health Center Location </description>
+    <creator/>
+    <dateCreated id="3">2016-03-07 19:15:56</dateCreated>
+    <retired>false</retired>
+    <attributes id="4"/>
+    <locationId>6</locationId>
+    <country>Uganda</country>
+    <childLocations id="5">
+      <org.openmrs.Location id="6" uuid="ba158c33-dc43-4306-9a4a-b4075751d36c">
+        <name>Lab</name>
+        <description>Area for carrying out patient tests</description>
+        <creator/>
+        <dateCreated id="7">2016-02-20 12:16:08</dateCreated>
+        <changedBy/>
+        <dateChanged id="8">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <attributes id="9"/>
+        <locationId>2</locationId>
+        <country>Uganda</country>
+        <parentLocation reference="2"/>
+        <childLocations id="10"/>
+        <tags id="11">
+          <org.openmrs.LocationTag id="12" uuid="b8bbf83e-645f-451f-8efe-a0db56f09676">
+            <name>Login Location</name>
+            <description>When a user logs in and chooses a session location, they may only choose one with this tag</description>
+            <creator/>
+            <dateCreated id="13">2016-01-26 07:42:45</dateCreated>
+            <changedBy/>
+            <dateChanged id="14">2016-03-07 19:00:09</dateChanged>
+            <retired>false</retired>
+            <locationTagId>1</locationTagId>
+          </org.openmrs.LocationTag>
+        </tags>
+      </org.openmrs.Location>
+      <org.openmrs.Location id="15" uuid="8f96e239-8586-4ec6-9375-04c6e19628ae">
+        <name>SMC Clinic</name>
+        <description>Clinic for SMC services</description>
+        <creator/>
+        <dateCreated id="16">2016-02-20 12:16:36</dateCreated>
+        <changedBy/>
+        <dateChanged id="17">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <attributes id="18"/>
+        <locationId>3</locationId>
+        <country>Uganda</country>
+        <parentLocation reference="2"/>
+        <childLocations id="19"/>
+        <tags id="20">
+          <org.openmrs.LocationTag reference="12"/>
+        </tags>
+      </org.openmrs.Location>
+      <org.openmrs.Location id="21" uuid="e9bc61b5-69ff-414b-9cf0-0c22d6dfca2b">
+        <name>MCH Clinic</name>
+        <description>The clinic where ART services are provided</description>
+        <creator/>
+        <dateCreated id="22">2016-01-26 07:42:45</dateCreated>
+        <changedBy/>
+        <dateChanged id="23">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <attributes id="24"/>
+        <locationId>4</locationId>
+        <country>Uganda</country>
+        <parentLocation reference="2"/>
+        <childLocations id="25"/>
+        <tags id="26">
+          <org.openmrs.LocationTag reference="12"/>
+        </tags>
+      </org.openmrs.Location>
+      <org.openmrs.Location id="27" uuid="86863db4-6101-4ecf-9a86-5e716d6504e4">
+        <name>ART Clinic</name>
+        <description>The clinic where ART services are provided</description>
+        <creator/>
+        <dateCreated id="28">2016-01-26 07:42:45</dateCreated>
+        <changedBy/>
+        <dateChanged id="29">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <attributes id="30"/>
+        <locationId>5</locationId>
+        <country>Uganda</country>
+        <parentLocation reference="2"/>
+        <childLocations id="31"/>
+        <tags id="32">
+          <org.openmrs.LocationTag reference="12"/>
+        </tags>
+      </org.openmrs.Location>
+    </childLocations>
+    <tags id="33">
+      <org.openmrs.LocationTag id="34" uuid="1c783dca-fd54-4ea8-a0fc-2875374e9cb6">
+        <name>Admission Location</name>
+        <description>Patients may only be admitted to inpatient care in a location with this tag</description>
+        <creator/>
+        <dateCreated id="35">2013-08-01 23:43:47</dateCreated>
+        <changedBy/>
+        <dateChanged id="36">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <locationTagId>2</locationTagId>
+      </org.openmrs.LocationTag>
+      <org.openmrs.LocationTag id="37" uuid="8d4626ca-7abd-42ad-be48-56767bbcf272">
+        <name>Transfer Location</name>
+        <description>Patients may only be transferred (within the hospital) to a location with this tag</description>
+        <creator/>
+        <dateCreated id="38">2013-08-01 23:44:55</dateCreated>
+        <changedBy/>
+        <dateChanged id="39">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <locationTagId>3</locationTagId>
+      </org.openmrs.LocationTag>
+      <org.openmrs.LocationTag id="40" uuid="37dd4458-dc9e-4ae6-a1f1-789c1162d37b">
+        <name>Visit Location</name>
+        <description>Visits are only allowed to happen at locations tagged with this location tag or at locations that descend from a location tagged with this tag.</description>
+        <creator/>
+        <dateCreated id="41">2013-08-01 23:45:29</dateCreated>
+        <changedBy/>
+        <dateChanged id="42">2016-03-07 19:00:09</dateChanged>
+        <retired>false</retired>
+        <locationTagId>4</locationTagId>
+      </org.openmrs.LocationTag>
+    </tags>
+  </org.openmrs.Location>
+  <org.openmrs.Location reference="27"/>
+  <org.openmrs.Location id="43" uuid="8d6c993e-c2cc-11de-8d13-0010c6dffd0f">
+    <name>Unknown</name>
+    <creator/>
+    <dateCreated id="44">2005-09-21 21:00:00</dateCreated>
+    <changedBy/>
+    <dateChanged id="45">2016-03-07 19:00:09</dateChanged>
+    <retired>false</retired>
+    <attributes id="46"/>
+    <locationId>1</locationId>
+    <country>Uganda</country>
+    <childLocations id="47"/>
+    <tags id="48">
+      <org.openmrs.LocationTag reference="34"/>
+      <org.openmrs.LocationTag reference="37"/>
+      <org.openmrs.LocationTag reference="40"/>
+    </tags>
+  </org.openmrs.Location>
+  <org.openmrs.Location reference="15"/>
+  <org.openmrs.Location reference="6"/>
+  <org.openmrs.Location reference="21"/>
+  <org.openmrs.LocationTag reference="34"/>
+  <org.openmrs.LocationTag reference="40"/>
+  <org.openmrs.LocationTag reference="37"/>
+  <org.openmrs.LocationTag reference="12"/>
+</list>

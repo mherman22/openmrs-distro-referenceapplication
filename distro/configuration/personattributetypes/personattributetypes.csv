@@ -1,0 +1,7 @@
+Uuid,Void/Retire,Name,Description,Format,Searchable,Sort weight
+63535ca9-bb53-4a46-a14b-831788c25c10,,Father's Name,Person's Father's name,java.lang.String,false,15
+e493f4ec-51f1-4a77-8d3c-5791f8cb02cd,,Care giver's Name,Care givers name to the patient,java.lang.String,false,16
+553834ef-b3fe-4c79-826a-6d4b6978bcff,,Care giver's Telephone Number,The telephone number of the person giving care,java.lang.String,false,17
+3573b0c9-667a-48d6-862d-d5b8d84ac850,,Common Name,This is the widely used name when referring to the patient,java.lang.String,false,18
+56aef1a8-e4ef-476a-9998-9d2d67c3b01e,,Land Mark Feature,This is an easily visible feature when looking for the location of the patient,java.lang.String,false,19
+01c0111d-3bbc-4de6-8c5a-1cc91e86cc38,,Directions to Patient's Home,Detailed description of how one can get to the location of the patient,java.lang.String,false,20
